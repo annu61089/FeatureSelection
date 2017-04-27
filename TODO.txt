@@ -1,0 +1,75 @@
+CODE IMPROVEMENTS
+=================
+
+- Consider dropping all the common.dataobjects and use their internalData directly instead.
+- Refactor the statistics package and replace all the static methods with proper inheritance.
+- Write generic optimizers instead of having optimization methods in the algorithms. Add the optimizers and regularization packages under mathematics.
+
+NEW FEATURES
+============
+
+- Create a storage engine for MapDB 3 once caching, asynchronous writing and compression is supported.
+- Create a storage engine for BerkeleyDB.
+- Add the ability to call Machine Learning algorithms from command line or Python:
+    - https://pypi.python.org/pypi/javabridge
+    - https://github.com/LeeKamentsky/python-javabridge/
+    - https://github.com/fracpete/python-weka-wrapper
+
+
+DOCUMENTATION
+=============
+
+- Improve the code documentation.
+- Write How-to blog posts on building Text Classification models.
+- Update the website and link directly to the latest and previous documentations.
+
+
+NEW ALGORITHMS
+==============
+
+- Create a PercentileScaler numerical scaler.
+- Create the following FeatureSelectors: AnovaSelect, KruskalWallisSelect, SpearmanSelect.
+- Speed up LDA: http://www.cs.ucsb.edu/~mingjia/cs240/doc/273811.pdf
+- Factorization Machines: http://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf
+- Develop the FunkSVD and PLSI as probabilistic version of SVD.
+- Collaborative Filtering for Implicit Feedback Datasets: http://yifanhu.net/PUB/cf.pdf
+- Write a Mixture of Gaussians clustering method.
+- Include an anomaly detection algorithm.
+- Provide a wrapper for DBSCANClusterer and NeuralNet implementations of Maths.
+- Add the ability to search through the configuration space and find the best performing algorithmic configuration.
+
+
+TO CHECK OUT
+============
+
+Linear Algebra
+--------------
+
+- JBLAS - Linear Algebra for Java:
+	https://github.com/mikiobraun/jblas
+	http://jblas.org/
+
+Huge Collection libs, DBs and Storage
+-------------------------------------
+
+- Vanilla-java - HugeCollections:
+    https://code.google.com/p/vanilla-java/wiki/HugeCollections
+
+- Fastutil:
+    http://fastutil.di.unimi.it/#install
+
+- Joafip:
+    http://joafip.sourceforge.net/javadoc/net/sf/joafip/java/util/PHashMap.html
+
+- Chronicle Map:
+    https://github.com/OpenHFT/Chronicle-Map/
+
+- H2 Database:
+    http://www.h2database.com/html/main.html
+
+- ehcache:
+    http://www.ehcache.org/
+    http://stackoverflow.com/questions/4726370/looking-for-a-drop-in-replacement-for-a-java-util-map
+
+- redisson:
+    https://github.com/redisson/redisson

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Version: 0.8.1
+Implementation-Build: 3.0.0
+Main-Class: com.datumbox.framework.lib.Datumbox
+
